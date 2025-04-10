@@ -1,0 +1,7 @@
+.layout2 {
+    min-height: 100vh; /* Ensure the layout covers the full viewport height */
+    width: 100vw; /* Ensure the layout spans the full width of the viewport */
+    background: linear-gradient(to bottom, darkblue, #E3F2FD); /* Gradient from dark blue to light blue */
+    display: flex;
+    flex-direction: column;
+  }

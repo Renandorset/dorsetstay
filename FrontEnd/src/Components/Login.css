@@ -1,0 +1,50 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 0;
+  background-image: url("https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw; /* Ensure the wrapper takes the full width of the viewport */
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .wrapper {
+    background-size: contain;
+  }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  width: 100%; /* Ensure the container spans the full width */
+  max-width: 400px; /* Limit the width of the signup box */
+  padding: 2rem; /* Add padding for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  border-radius: 0.5rem; /* Optional: Add rounded corners */
+}
+
+.form-control {
+  background-color: rgba(245, 222, 179, 0.7) !important; /* Semi-transparent wheat */
+  border-color: lightcyan;
+  color: gray;
+  width: 100%; /* Ensure the input fields stay within the container */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.custom-form {
+  width: 100%; /* Ensure the form spans the container */
+}
+
+button {
+  width: 100%; /* Make buttons span the full width of the container */
+  margin-top: 1rem; /* Add spacing between buttons */
+}
